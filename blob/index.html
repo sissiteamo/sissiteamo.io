@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recuerdos que se Sienten</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Contenedor de partículas -->
+  <div id="particles-js"></div>
+
+  <!-- 0. Pantalla de carga -->
+  <div id="loading" class="screen">
+    <p id="loadingText"></p>
+  </div>
+
+  <!-- 1. Pantalla de activación sensorial -->
+  <div id="soundScreen" class="screen hidden">
+    <div class="center">
+      <h1>Dale click</h1>
+      <button id="startBtn">CLICKEAME AAAHHHH</button>
+    </div>
+  </div>
+
+  <!-- Audio de fondo -->
+  <audio id="bgMusic" src="assets/Bad Bunny & The Marías - Otro Atardecer.mp3" loop></audio>
+
+  <!-- 3. Carrusel de recuerdos -->
+  <div id="carouselScreen" class="screen hidden">
+    <div class="swipe-hint">
+      <span class="hint-text">← Desliza para navegar →</span>
+    </div>
+    <div id="slideContainer"></div>
+    <div class="minimal-controls">
+      <button id="musicToggle" class="circle-btn">
+        <span class="btn-icon">🎵</span>
+      </button>
+      <label class="auto-label">
+        <input type="checkbox" id="autoToggle">
+        <span class="auto-text">Auto</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- 4. Pantalla final -->
+  <div id="finalScreen" class="screen hidden">
+    <div class="center">
+      <h1>Te quiero cómo no tienes idea. Tu eres una niña increíble.</h1>
+      <p>Eres la mejor niña del planeta.</p>
+      <button id="restartBtn">Volver a ver desde el principio</button>
+      
+      <div class="personal-note">
+        <h2>Por qué hice esto?</h2>
+        <p>
+          Porque creo que a veces las palabras no son suficientes para expresar lo que siento. 
+          Porque cada foto, cada momento, cada risa y hasta cada momento que hemos vivido 
+          creo que merece ser recordada.
+        </p>
+        <p>
+          Sé que cometí errores, pero también sé que lo que tenemos es especial. 
+          Esta página es mi manera de decirte que cada momento contigo vale la pena, 
+          que me importas más de lo que puedo expresar, y que quiero seguir 
+          creando recuerdos juntos.
+        </p>
+        <p>
+          Gracias por darme la oportunidad de mostrarte lo mucho que significas para mí Sissi. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
