@@ -1,9 +1,9 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Te quiero sissi</title>
+  <title>Te quiero Sissi</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,7 +19,9 @@ a<!DOCTYPE html>
   <div id="soundScreen" class="screen hidden">
     <div class="center">
       <h1>Dale click</h1>
+      <!-- Botones añadidos -->
       <button id="startBtn">CLICKEAME AAAHHHH</button>
+      <button id="goToNoteBtn">Ver mis recuerdos para ti</button>
     </div>
   </div>
 
@@ -46,7 +48,7 @@ a<!DOCTYPE html>
   <!-- 4. Pantalla final -->
   <div id="finalScreen" class="screen hidden">
     <div class="center">
-      <h1>Te quiero cómo no tienes idea. Tu eres una niña increíble.</h1>
+      <h1>Te quiero cómo no tienes idea. Tú eres una niña increíble.</h1>
       <p>Eres la mejor niña del planeta.</p>
       <button id="restartBtn">Volver a ver desde el principio</button>
       
@@ -73,5 +75,15 @@ a<!DOCTYPE html>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    // Redirigir al HTML raíz donde está tu nota
+    const goToNoteBtn = document.getElementById('goToNoteBtn');
+    goToNoteBtn.addEventListener('click', () => {
+      window.location.href = 'recuerdos.html'; // <- Cambia esto al nombre de tu archivo raíz
+    });
+
+    // El botón de inicio ya debería estar funcionando desde tu script.js
+  </script>
 </body>
-</html> 
+</html>
